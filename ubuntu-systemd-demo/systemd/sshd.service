@@ -1,0 +1,17 @@
+[Unit]
+Description=OpenSSH Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+RuntimeDirectory=sshd
+RuntimeDirectoryMode=0755
+ExecStart=/usr/sbin/sshd -D -e
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

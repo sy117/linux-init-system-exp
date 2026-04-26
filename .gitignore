@@ -1,0 +1,76 @@
+# Docker
+docker-compose.override.yml
+.docker/
+*.tar
+*.tar.xz
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.atom/
+.vim/
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+*.bak
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
